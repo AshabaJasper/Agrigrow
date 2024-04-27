@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Agrigrow - Revolutionizing Farming with Technology</title>
+    <meta name="keywords" content="Agrigrow, farming, agriculture, marketplace, education, resources">
+    <meta name="description" content="Agrigrow helps farmers increase productivity through access to a wide range of resources including a marketplace for fertilizers, seeds, and equipment, as well as educational materials and scheduling tools.">
+    <meta name="author" content="Ashaba Joshua Jasper and team">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="custom-select-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Choose Currency">
+							<option>¥ JPY</option>
+							<option>$ USD</option>
+							<option>€ EUR</option>
+                            <option>UGX UGX</option> <!-- Added Ugandan Shilling -->
+						</select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="#"> +256 700 800 900</a></p> <!-- Updated phone number to a more region-appropriate example -->
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
+                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="login-box">
+						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
+							<option>Register Here</option>
+							<option>Sign In</option>
+						</select>
+					</div>
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> 10% off on Fertilizers - Use code: AGRI10
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Special offer: 30% off on selected seeds
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 15% off your first equipment purchase
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Join Agrigrow today and save up to 20% on purchases
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Free delivery for orders over UGX 200,000
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Early bird discount: Register now and get 25% off
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Flash sale: 50% off on all plant nutrients today!
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Exclusive deals for registered members only
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Alert Section for Notifications -->
+    <div class="alert-section">
+        <div class="container">
+            <div class="alert alert-success" role="alert">
+                <strong>Weather Alert:</strong> Heavy rainfall expected this week. Adjust your irrigation schedules accordingly.
+            </div>
+            <div class="alert alert-info" role="alert">
+                <strong>Market Update:</strong> Check the latest prices for seeds on the marketplace today!
+            </div>
+        </div>
+    </div>
+    <!-- End Alert Section -->
+</body>
+
+<!-- Start Main Top -->
+<header class="main-header">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="Agrigrow logo"></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About </a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Marketplace</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">Fertilizers & Seeds</a></li>
+                            <li><a href="shop-detail.html">Product Details</a></li>
+                            <li><a href="cart.html">Your Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="my-account.html">My Account</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Educational Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="alerts.html">Alerts</a></li> <!-- Added Alerts page link -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Start Attribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li class="side-menu">
+                        <a href="cart.html">
+                            <i class="fa fa-shopping-bag"></i>
+                            <span class="badge">3</span>
+                            <p>My Cart</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Attribute Navigation -->
+        </div>
+    </nav>
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+
+<!-- Start Side Menu -->
+<div class="side">
+    <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+    <li class="cart-box">
+        <ul class="cart-list">
+            <li>
+                <a href="shop-detail.html" class="photo"><img src="images/img-pro-01.jpg" class="cart-thumb" alt="Fertilizer" /></a>
+                <h6><a href="shop-detail.html">Premium Fertilizer</a></h6>
+                <p>1x - <span class="price">UGX 80,000</span></p>
+            </li>
+            <li>
+                <a href="shop-detail.html" class="photo"><img src="images/img-pro-02.jpg" class="cart-thumb" alt="Seeds" /></a>
+                <h6><a href="shop-detail.html">Hybrid Seeds Pack</a></h6>
+                <p>1x - <span class="price">UGX 60,000</span></p>
+            </li>
+            <li>
+                <a href="shop-detail.html" class="photo"><img src="images/img-pro-03.jpg" class="cart-thumb" alt="Pesticide" /></a>
+                <h6><a href="shop-detail.html">Eco-friendly Pesticide</a></h6>
+                <p>1x - <span class="price">UGX 40,000</span></p>
+            </li>
+            <li class="total">
+                <a href="cart.html" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                <span class="float-right"><strong>Total</strong>: UGX 180,000</span>
+            </li>
+        </ul>
+    </li>
+</div>
+<!-- End Side Menu -->
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search Agrigrow products">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+
+<!-- Start Slider -->
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+            <img src="images/banner-01.jpg" alt="Agrigrow - Empowering Farmers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> Agrigrow</strong></h1>
+                        <p class="m-b-40">Empowering farmers with easy access to quality fertilizers, seeds, and agricultural equipment. <br> Explore our marketplace for the best agricultural supplies.</p>
+                        <p><a class="btn hvr-hover" href="shop.html">Shop Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="images/banner-02.jpg" alt="Agrigrow - Innovative Farming Solutions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Revolutionize Your Farming <br> with Agrigrow</strong></h1>
+                        <p class="m-b-40">Discover innovative solutions for modern agriculture. <br> Improve crop yields and efficiency through our smart farming tools.</p>
+                        <p><a class="btn hvr-hover" href="shop.html">Explore Tools</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="images/banner-03.jpg" alt="Agrigrow - Learn and Grow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Learn and Grow <br> with Agrigrow</strong></h1>
+                        <p class="m-b-40">Access our comprehensive range of educational resources to learn the best farming practices. <br> Enhance your knowledge and skills for a sustainable future.</p>
+                        <p><a class="btn hvr-hover" href="gallery.html">Visit Resources</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!-- End Slider -->
+
+<!-- Start Categories -->
+<div class="categories-shop">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="shop-cat-box">
+                    <img class="img-fluid" src="images/categories_img_01.jpg" alt="Quality Fertilizers" />
+                    <a class="btn hvr-hover" href="shop.html">Quality Fertilizers</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="shop-cat-box">
+                    <img class="img-fluid" src="images/categories_img_02.jpg" alt="Hybrid Seeds" />
+                    <a class="btn hvr-hover" href="shop.html">Hybrid Seeds</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="shop-cat-box">
+                    <img class="img-fluid" src="images/categories_img_03.jpg" alt="Farm Equipment" />
+                    <a class="btn hvr-hover" href="shop.html">Farm Equipment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Categories -->
+
+	
+	<div class="box-add-products">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="offer-box-products">
+						<img class="img-fluid" src="images/add-img-01.jpg" alt="" />
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="offer-box-products">
+						<img class="img-fluid" src="images/add-img-02.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Start Products -->
+<div class="products-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-all text-center">
+                    <h1>Agricultural Supplies</h1>
+                    <p>Explore our wide range of quality agricultural products tailored to enhance your farming efficiency and productivity.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="special-menu text-center">
+                    <div class="button-group filter-button-group">
+                        <button class="active" data-filter="*">All</button>
+                        <button data-filter=".fertilizers">Fertilizers</button>
+                        <button data-filter=".seeds">Seeds</button>
+                        <button data-filter=".equipment">Equipment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row special-list">
+            <div class="col-lg-3 col-md-6 special-grid fertilizers">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <div class="type-lb">
+                            <p class="sale">Sale</p>
+                        </div>
+                        <img src="images/img-pro-01.jpg" class="img-fluid" alt="High-Quality Nitrogen Fertilizer">
+                        <div class="mask-icon">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul>
+                            <a class="cart" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="why-text">
+                        <h4>Nitrogen Fertilizer</h4>
+                        <h5> UGX 7,790</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 special-grid seeds">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <div class="type-lb">
+                            <p class="new">New</p>
+                        </div>
+                        <img src="images/img-pro-02.jpg" class="img-fluid" alt="Hybrid Maize Seeds">
+                        <div class="mask-icon">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i the="far fa-heart"></i></a></li>
+                            </ul>
+                            <a class="cart" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="why-text">
+                        <h4>Hybrid Maize Seeds</h4>
+                        <h5> UGX 9,790</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 special-grid equipment">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <div class="type-lb">
+                            <p class="sale">Sale</p>
+                        </div>
+                        <img src="images/img-pro-03.jpg" class="img-fluid" alt="Portable Water Pump">
+                        <div class="mask-icon">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul>
+                            <a class="cart" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="why-text">
+                        <h4>Portable Water Pump</h4>
+                        <h5> UGX 10,790</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <div class="type-lb">
+                            <p class="sale">Sale</p>
+                        </div>
+                        <img src="images/img-pro-04.jpg" class="img-fluid" alt="Durable Plowing Equipment">
+                        <div class="mask-icon">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right, title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul>
+                            <a class="cart" href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="why-text">
+                        <h4>Durable Plowing Equipment</h4>
+                        <h5> UGX 15,790</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Products -->
+
+
+<!-- Start Blog -->
+<div class="latest-blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-all text-center">
+                    <h1>Latest Blog</h1>
+                    <p>Stay updated with the latest trends in agriculture, expert advice, and insights from the field.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 col-xl-4">
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/blog-img.jpg" alt="Sustainable Farming Practices" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="title-blog">
+                            <h3>Embracing Sustainable Farming</h3>
+                            <p>Explore how innovative practices can lead to more sustainable agriculture, enhancing soil health and increasing crop yield.</p>
+                        </div>
+                        <ul class="option-blog">
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                            <li><a href="#"><i class="far fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/blog-img-01.jpg" alt="Technological Advancements in Agriculture" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="title-blog">
+                            <h3>Technological Advancements in Agriculture</h3>
+                            <p>Discover the latest technologies and tools that are transforming the agricultural industry, from drones to AI-driven analytics.</p>
+                        </div>
+                        <ul class="option-blog">
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                            <li><a href="#"><i the="far fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/blog-img-02.jpg" alt="Organic Farming Success Stories" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="title-blog">
+                            <h3>Success Stories in Organic Farming</h3>
+                            <p>Read about the successes of local farmers who have turned to organic farming methods and the impact it has had on their livelihoods and community.</p>
+                        </div>
+                        <ul class="option-blog">
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                            <li><a href="#"><i class="far fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog -->
+
+
+
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-08.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-09.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
+
+
+<!-- Start Footer -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Hours</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 08.00am to 05.00pm</li> 
+                            <li>Saturday: 10.00am to 08.00pm</li> 
+                            <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Stay Updated</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Enter Your Email" />
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Connect With Us</h3>
+                        <p>Follow us on social media for the latest updates and tips on agricultural practices.</p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>About Agrigrow</h4>
+                        <p>Agrigrow is dedicated to empowering farmers through technology, providing resources and products that enhance agricultural productivity and sustainability.</p>
+                        <p>We strive to offer solutions that improve efficiency and make farming more profitable for small and large scale farmers alike.</p>                            
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">About Agrigrow</a></li>
+                            <li><a href="#">Customer Support</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Agrigrow</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: 123 Agrigrow Lane, Kampala, Uganda</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+256-700-800-900">+256-700-800-900</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:support@agrigrow.ug">support@agrigrow.ug</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<!-- Start copyright -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved. &copy; 2024 <a href="#">Agrigrow</a> Designed by:
+        <a href="https://html.design/">html design</a></p>
+</div>
+<!-- End copyright -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: block;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
