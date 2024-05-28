@@ -121,7 +121,7 @@
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Marketplace</a>
                         <ul class="dropdown-menu">
@@ -134,7 +134,7 @@
                             <li><a href="wishlist.html">Wishlist</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="agri-ai.html">Agri-AI</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="agri-ai.html">Agri-AI</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link text-danger" href="data.html">Data</a></li>
                 </ul>
@@ -178,10 +178,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>ABOUT US</h2>
+                    <h2>TALK TO AGRI-AI</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">ABOUT US</li>
+                        <li class="breadcrumb-item active">AGRI-AI</li>
                     </ul>
                 </div>
             </div>
@@ -189,135 +189,63 @@
     </div>
     <!-- End All Title Box -->
 
-<!-- Start About Page -->
-<div class="about-box-main">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="banner-frame">
-                    <img class="img-fluid" src="images/about-img.jpg" alt="About Agrigrow" />
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <h2 class="noo-sh-title-top">We are <span>Agrigrow</span></h2>
-                <p>"At Agrigrow, our mission is to revolutionize farming through innovative technology and sustainable practices. We empower farmers with tools and insights needed to enhance productivity and profitability while respecting the environment.</p>
-                <p>Our platform provides a comprehensive range of products including high-quality seeds, fertilizers, and farming equipment, coupled with educational resources to ensure farmers are well-equipped to meet modern agricultural demands.</p>
-                <p>Join us in transforming agriculture into a sustainable and profitable venture for communities around Uganda and beyond."</p>
-                <a class="btn hvr-hover" href="more-about.html">Read More</a>
-            </div>
-        </div>
-        <div class="row my-5">
-            <div class="col-sm-6 col-lg-4">
-                <div class="service-block-inner">
-                    <i class="fa fa-handshake fa-3x"></i>
-                    <h3>We are Trusted</h3>
-                    <p>With years of experience and a commitment to quality, Agrigrow has earned the trust of farmers across the region by consistently providing reliable products and services.</p>
-                    
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="service-block-inner">
-                    <i class="fa fa-briefcase fa-3x"></i>
-                    <h3>We are Professional</h3>
-                    <p>Our team comprises industry experts who bring a wealth of knowledge and professionalism to every aspect of our operations, from research and development to customer service.</p>
-                    
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="service-block-inner">
-                    <i class="fa fa-graduation-cap fa-3x"></i>
-                    <h3>We are Experts</h3> 
-                    <p>Agrigrow is at the forefront of agricultural innovation. We utilize the latest technologies and data-driven approaches to provide solutions that are both effective and sustainable.</p>
-                    
+
+    <div class="agri-ai-chatbox">
+        <div class="container">
+            <h2>Talk to Agri-AI</h2>
+            <p>Ask any questions about farming practices and get real-time advice from our AI.</p>
+            <div class="chat-container">
+                <ul id="chat-list" class="chat-list"></ul>
+                <div class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Type your message here..." />
+                    <button onclick="sendMessage()">Send</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End About Page -->
+    
+    
+    <script>
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const chatList = document.getElementById('chat-list');
+            const userText = input.value.trim();
+    
+            if (!userText) return; // Prevent empty submissions
+    
+            const userMessage = document.createElement('li');
+            userMessage.textContent = 'You: ' + userText;
+            chatList.appendChild(userMessage);
+    
+            fetch('/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({message: userText})
+            })
+            .then(response => response.json())
+            .then(data => {
+                const aiResponse = data.choices[0].message.content;
+                const aiMessage = document.createElement('li');
+                aiMessage.textContent = 'Agri-AI: ' + aiResponse;
+                chatList.appendChild(aiMessage);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                const errorMessage = document.createElement('li');
+                errorMessage.textContent = 'Agri-AI: I encountered an error trying to respond.';
+                chatList.appendChild(errorMessage);
+            });
+    
+            input.value = ''; // Clear input after sending
+        }
+    </script>
+    
 
 
-            <!-- Start About Page -->
-            <div class="about-box-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="noo-sh-title">Meet Our Team</h2>
-                        </div>
-                        <!-- Team Member: Ashaba Joshua Jasper -->
-                        <div class="col-sm-12 col-lg-4">
-                            <div class="hover-team">
-                                <div class="our-team">
-                                    <img src="images/img-1.jpg" class="img-fluid" alt="Ashaba Joshua Jasper" />
-                                    <div class="team-content">
-                                        <h3 class="title">Ashaba Joshua Jasper</h3>
-                                        <span class="post">Lead Developer</span>
-                                    </div>
-                                    <ul class="social">
-                                        <li><a href="#" class="fab fa-facebook"></a></li>
-                                        <li><a href="#" class="fab fa-twitter"></a></li>
-                                        <li><a href="#" class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                    <div class="icon"><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="team-description">
-                                    <p>Ashaba Joshua Jasper orchestrates the development of Agrigrow, ensuring all technological facets synergize to empower farmers through innovation and accessible technology.</p>
-                                </div>
-                                <hr class="my-0">
-                            </div>
-                        </div>
-                        <!-- Team Member: Opol Charis -->
-                        <div class="col-sm-12 col-lg-4">
-                            <div class="hover-team">
-                                <div class="our-team">
-                                    <img src="images/img-2.jpg" class="img-fluid" alt="Opol Charis" />
-                                    <div class="team-content">
-                                        <h3 class="title">Opol Charis</h3>
-                                        <span class="post">Outreach and Market Lead</span>
-                                    </div>
-                                    <ul class="social">
-                                        <li><a href="#" class="fab fa-facebook"></a></li>
-                                        <li><a href="#" class="fab fa-twitter"></a></li>
-                                        <li><a href="#" class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                    <div class="icon"><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="team-description">
-                                    <p>Opol Charis drives the outreach and market engagement strategies, working closely with the farming communities to ensure Agrigrow's offerings meet their needs and enhance their agricultural practices.</p>
-                                </div>
-                                <hr class="my-0">
-                            </div>
-                        </div>
-                        <!-- Team Member: Duncan -->
-                        <div class="col-sm-12 col-lg-4">
-                            <div class="hover-team">
-                                <div class="our-team">
-                                    <img src="images/img-3.jpg" class="img-fluid" alt="Duncan" />
-                                    <div class="team-content">
-                                        <h3 class="title">Duncan</h3>
-                                        <span class="post">Research and Designer</span>
-                                    </div>
-                                    <ul class="social">
-                                        <li><a href="#" class="fab fa-facebook"></a></li>
-                                        <li><a href="#" class="fab fa-twitter"></a></li>
-                                        <li><a href="#" class="fab fa-linkedin"></a></li>
-                                    </ul>
-                                    <div class="icon"><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="team-description">
-                                    <p>Duncan specializes in the research and design of Agrigrow’s innovative solutions, ensuring the products not only meet high standards of efficiency but also are user-friendly for the farming community.</p>
-                                </div>
-                                <hr class="my-0">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End About Page -->
-            
 
-
-    <!-- Start Instagram Feed  -->
+        <!-- Start Instagram Feed  -->
     <div class="instagram-box">
         <div class="main-instagram owl-carousel owl-theme">
             <div class="item">
@@ -509,6 +437,7 @@
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- ALL JS FILES -->
+    
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
