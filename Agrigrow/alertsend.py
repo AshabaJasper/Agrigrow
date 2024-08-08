@@ -59,7 +59,7 @@ HTML = '''
 </head>
 <body>
     <div class="container">
-        <h2>Send Weather Alert SMS</h2>
+        <h2>Agrigow Alerts SMS</h2>
         <form id="smsForm" action="/send_sms" method="post">
             <label for="message">Message:</label>
             <input type="text" id="message" name="message" required>
