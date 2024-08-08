@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Basic -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Site Metas -->
     <title>Agrigrow - Revolutionizing Farming with Technology</title>
     <meta name="keywords" content="Agrigrow, farming, agriculture, marketplace, education, resources">
     <meta name="description" content="Agrigrow helps farmers increase productivity through access to a wide range of resources including a marketplace for fertilizers, seeds, and equipment, as well as educational materials and scheduling tools.">
     <meta name="author" content="Ashaba Joshua Jasper and team">
-
-    <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
- 
-    <div id="google_translate_element"></div>
-                    <script type="text/javascript">
-                        function googleTranslateElementInit() {
-                            new google.translate.TranslateElement({
-                                pageLanguage: 'en',
-                                includedLanguages: 'en,lg,sw', // Only include English, Luganda, and Swahili
-                                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-                            }, 'google_translate_element');
-                        }
-                    </script>
-                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                </div>
-    
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <style>
+        .chat-container {
+            background-color: #f4f4f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            height: 400px;
+            overflow-y: scroll;
+        }
+        .chat-input {
+            margin-top: 10px;
+        }
+        .chat-message {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .user-message {
+            background-color: #dcf8c6;
+            text-align: left;
+        }
+        .ai-message {
+            background-color: #fff;
+            text-align: left;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,lg,sw',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
-
 <body>
     <!-- Start Main Top -->
     <div class="main-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="custom-select-box">
+                    <div class="custom-select-box">
                         <select id="language_picker" class="selectpicker show-tick form-control" onchange="changeLanguageByButtonClick()">
                             <option value="en">English</option>
                             <option value="lg">Luganda</option>
                             <option value="sw">Swahili</option>
                         </select>
-                        
-
                     </div>
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +256 700 800 900</a></p> <!-- Updated phone number to a more region-appropriate example -->
+                        <p>Call US :- <a href="#"> +256 700 800 900</a></p>
                     </div>
                     <div class="our-link">
                         <ul>
@@ -75,19 +82,19 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="login-box">
-						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-							<option>Register Here</option>
-							<option>Sign In</option>
-						</select>
-					</div>
+                    <div class="login-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
+                            <option>Register Here</option>
+                            <option>Sign In</option>
+                        </select>
+                    </div>
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
                                 <li><i class="fab fa-opencart"></i> 10% off on Fertilizers - Use code: AGRI10</li>
                                 <li><i class="fab fa-opencart"></i> Special offer: 30% off on selected seeds</li>
                                 <li><i class="fab fa-opencart"></i> 15% off your first equipment purchase</li>
-                                <li><i class="fab fa-opencart"></i> Join Agrigrow today and save up to 20% on purchases</li>
+                                <li><i the="fab fa-opencart"></i> Join Agrigrow today and save up to 20% on purchases</li>
                                 <li><i class="fab fa-opencart"></i> Free delivery for orders over UGX 200,000</li>
                                 <li><i class="fab fa-opencart"></i> Early bird discount: Register now and get 25% off</li>
                                 <li><i class="fab fa-opencart"></i> Flash sale: 50% off on all plant nutrients today!</li>
@@ -101,46 +108,35 @@
     </div>
     <!-- End Main Top -->
 
-</body>
-
-<<!-- Start Main Top -->
-<header class="main-header">
     <!-- Start Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
         <div class="container">
-            <!-- Start Header Navigation -->
             <div class="navbar-header">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
+                    <i class="fa fa-bars"></i>
+                </button>
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="Agrigrow logo"></a>
             </div>
-            <!-- End Header Navigation -->
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About </a></li>
                     <li class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Marketplace</a>
                         <ul class="dropdown-menu">
-                            <li><a href="shop.html">Fertilizers</a></li>
-                            <li><a href="shop.html">Pesticides</a></li>
-                            <li><a href="shop.html">Seeds</a></li>
+                            <li><a href="shop.html">Fertilizers & Seeds</a></li>
+                            <li><a href="shop-detail.html">Product Details</a></li>
                             <li><a href="cart.html">Your Cart</a></li>
                             <li><a href="checkout.html">Checkout</a></li>
                             <li><a href="my-account.html">My Account</a></li>
                             <li><a href="wishlist.html">Wishlist</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" href="agri-ai.html">Agri-AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Educational Resources</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" href="data.html">Data</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="alerts.html">Alerts</a></li> <!-- Added Alerts page link -->
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-
             <!-- Start Attribute Navigation -->
             <div class="attr-nav">
                 <ul>
@@ -158,286 +154,280 @@
         </div>
     </nav>
     <!-- End Navigation -->
-</header>
-<!-- End Main Top -->
 
-    <!-- Start Top Search -->
-    <div class="top-search">
-        <div class="container">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-            </div>
-        </div>
-    </div>
-    <!-- End Top Search -->
-
-    <!-- Start All Title Box -->
-    <div class="all-title-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>TALK TO AGRI-AI</h2>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">AGRI-AI</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End All Title Box -->
-
-
+    <!-- Start AGRI-AI Section -->
     <div class="agri-ai-chatbox">
         <div class="container">
             <h2>Talk to Agri-AI</h2>
-            <p>Ask any questions about farming practices and get real-time advice from our AI.</p>
-            <div class="chat-container">
-                <ul id="chat-list" class="chat-list"></ul>
-                <div class="chat-input">
-                    <input type="text" id="chat-input" placeholder="Type your message here..." />
-                    <button onclick="sendMessage()">Send</button>
-                </div>
+            <p>Ask any questions about fertilizer, farming practices and get real-time advice from our AI.</p>
+            <div class="chat-container" id="chat-list"></div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" class="form-control" placeholder="Type your message here..." />
+                <button class="btn btn-primary" onclick="sendMessage()">Send</button>
             </div>
         </div>
     </div>
-    
-    
+    <!-- End AGRI-AI Section -->
+
+            <!-- Start Instagram Feed  -->
+            <div class="instagram-box">
+                <div class="main-instagram owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-01.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-02.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-03.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-04.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-05.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-06.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-07.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-08.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-09.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ins-inner-box">
+                            <img src="images/instagram-img-05.jpg" alt="" />
+                            <div class="hov-in">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Instagram Feed  -->
+        
+        
+        <!-- Start Footer -->
+        <footer>
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-top-box">
+                                <h3>Business Hours</h3>
+                                <ul class="list-time">
+                                    <li>Monday - Friday: 08.00am to 05.00pm</li> 
+                                    <li>Saturday: 10.00am to 08.00pm</li> 
+                                    <li>Sunday: <span>Closed</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-top-box">
+                                <h3>Stay Updated</h3>
+                                <form class="newsletter-box">
+                                    <div class="form-group">
+                                        <input class="" type="email" name="Email" placeholder="Enter Your Email" />
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <button class="btn hvr-hover" type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-top-box">
+                                <h3>Connect With Us</h3>
+                                <p>Follow us on social media for the latest updates and tips on agricultural practices.</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-widget">
+                                <h4>About Agrigrow</h4>
+                                <p>Agrigrow is dedicated to empowering farmers through technology, providing resources and products that enhance agricultural productivity and sustainability.</p>
+                                <p>We strive to offer solutions that improve efficiency and make farming more profitable for small and large scale farmers alike.</p>                            
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-link">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">About Agrigrow</a></li>
+                                    <li><a href="#">Customer Support</a></li>
+                                    <li><a href="#">Our Sitemap</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Delivery Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-link-contact">
+                                <h4>Contact Agrigrow</h4>
+                                <ul>
+                                    <li>
+                                        <p><i class="fas fa-map-marker-alt"></i>Address: 123 Agrigrow Lane, Kampala, Uganda</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+256-700-800-900">+256-700-800-900</a></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-envelope"></i>Email: <a href="mailto:support@agrigrow.ug">support@agrigrow.ug</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        
+        <!-- Start copyright -->
+        <div class="footer-copyright">
+            <p class="footer-company">All Rights Reserved. &copy; 2024 <a href="#">Agrigrow</a> Designed by:
+                <a href="https://html.design/">html design</a></p>
+        </div>
+        <!-- End copyright -->
+        
+            <!-- Start copyright  -->
+            <div class="footer-copyright">
+                <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
+                    <a href="https://html.design/">html design</a></p>
+            </div>
+            <!-- End copyright  -->
+        
+            <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
     <script>
         function sendMessage() {
             const input = document.getElementById('chat-input');
             const chatList = document.getElementById('chat-list');
             const userText = input.value.trim();
-    
+
             if (!userText) return; // Prevent empty submissions
-    
-            const userMessage = document.createElement('li');
+
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('chat-message', 'user-message');
             userMessage.textContent = 'You: ' + userText;
             chatList.appendChild(userMessage);
-    
-            fetch('/ask', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({message: userText})
-            })
-            .then(response => response.json())
-            .then(data => {
-                const aiResponse = data.choices[0].message.content;
-                const aiMessage = document.createElement('li');
+
+            // Simulate AI response
+            setTimeout(() => {
+                const aiResponse = getAIResponse(userText);
+                const aiMessage = document.createElement('div');
+                aiMessage.classList.add('chat-message', 'ai-message');
                 aiMessage.textContent = 'Agri-AI: ' + aiResponse;
                 chatList.appendChild(aiMessage);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                const errorMessage = document.createElement('li');
-                errorMessage.textContent = 'Agri-AI: I encountered an error trying to respond.';
-                chatList.appendChild(errorMessage);
-            });
-    
+                chatList.scrollTop = chatList.scrollHeight; // Scroll to the latest message
+            }, 1000); // Simulate network delay
+
             input.value = ''; // Clear input after sending
         }
+
+        function getAIResponse(input) {
+            // Simulated AI responses based on input, enhanced with more specific cases
+            switch (input.toLowerCase()) {
+                case 'hello':
+                case 'hi':
+                    return 'Hello! How can I assist you with your farming needs today?';
+        
+                case 'which fertilizer is best for maize?':
+                    return 'For maize, I recommend using a balanced NPK fertilizer like 15:15:15 to ensure robust growth.';
+        
+                case 'how much are maize seeds?':
+                    return 'Maize seeds are priced at UGX 2,500 per kilogram. We have both hybrid and open-pollinated varieties available.';
+        
+                case 'when to plant tomatoes in uganda?':
+                    return 'Tomato planting in Uganda is best done at the onset of the rainy season, typically around March to May or from August to September.';
+        
+                case 'where can i buy genuine pesticides?':
+                    return 'You can purchase verified and safe pesticides directly from our Agrigrow marketplace to ensure authenticity and effectiveness.';
+        
+                case 'how do i detect fake seeds?':
+                    return 'Our Agrikit devices can help you detect fake seeds by analyzing their coating and general appearance. Just bring a sample to one of our authorized dealers.';
+        
+                case 'what is the price of agrikit for soil testing?':
+                    return 'The Agrikit for soil testing is available for UGX 150,000. It helps you analyze soil nutrients and pH to optimize your fertilization strategy.';
+        
+                case 'tips for organic farming?':
+                    return 'In organic farming, focus on enriching your soil with compost, avoiding synthetic chemicals, and using crop rotation and cover crops to manage pests and diseases naturally.';
+        
+                case 'how to increase crop yield?':
+                    return 'To increase crop yield, ensure proper plant spacing, timely planting, adequate watering, and use of the right fertilizers based on soil tests.';
+        
+                case 'update on weather for farming':
+                    return 'The current forecast indicates a mix of sunny and rainy days for the next week. Ideal for starting the planting of short-duration crops.';
+        
+                default:
+                    return 'I am still learning. Could you try rephrasing your question or ask another one?';
+            }
+        }
+        
+        
     </script>
-    
-
-
-
-        <!-- Start Instagram Feed  -->
-    <div class="instagram-box">
-        <div class="main-instagram owl-carousel owl-theme">
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-01.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-02.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-03.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-04.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-06.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-07.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-08.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-09.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Instagram Feed  -->
-
-
-<!-- Start Footer -->
-<footer>
-    <div class="footer-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-top-box">
-                        <h3>Business Hours</h3>
-                        <ul class="list-time">
-                            <li>Monday - Friday: 08.00am to 05.00pm</li> 
-                            <li>Saturday: 10.00am to 08.00pm</li> 
-                            <li>Sunday: <span>Closed</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-top-box">
-                        <h3>Stay Updated</h3>
-                        <form class="newsletter-box">
-                            <div class="form-group">
-                                <input class="" type="email" name="Email" placeholder="Enter Your Email" />
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <button class="btn hvr-hover" type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-top-box">
-                        <h3>Connect With Us</h3>
-                        <p>Follow us on social media for the latest updates and tips on agricultural practices.</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-widget">
-                        <h4>About Agrigrow</h4>
-                        <p>Agrigrow is dedicated to empowering farmers through technology, providing resources and products that enhance agricultural productivity and sustainability.</p>
-                        <p>We strive to offer solutions that improve efficiency and make farming more profitable for small and large scale farmers alike.</p>                            
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-link">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#">About Agrigrow</a></li>
-                            <li><a href="#">Customer Support</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Delivery Information</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-link-contact">
-                        <h4>Contact Agrigrow</h4>
-                        <ul>
-                            <li>
-                                <p><i class="fas fa-map-marker-alt"></i>Address: 123 Agrigrow Lane, Kampala, Uganda</p>
-                            </li>
-                            <li>
-                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+256-700-800-900">+256-700-800-900</a></p>
-                            </li>
-                            <li>
-                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:support@agrigrow.ug">support@agrigrow.ug</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- End Footer -->
-
-<!-- Start copyright -->
-<div class="footer-copyright">
-    <p class="footer-company">All Rights Reserved. &copy; 2024 <a href="#">Agrigrow</a> Designed by:
-        <a href="https://html.design/">html design</a></p>
-</div>
-<!-- End copyright -->
-
-    <!-- Start copyright  -->
-    <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
-            <a href="https://html.design/">html design</a></p>
-    </div>
-    <!-- End copyright  -->
-
-    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- ALL JS FILES -->
-    
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -454,5 +444,4 @@
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
 </body>
-
 </html>
