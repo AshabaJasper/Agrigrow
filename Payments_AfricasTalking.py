@@ -11,7 +11,7 @@ payments = africastalking.Payment
 
 # Define payment parameters
 product_name = 'AgrigrowProducts'
-phone_number = '+256788336339'
+phone_number = '+256712345678'
 currency_code = 'UGX'
 amount = 5000.00
 metadata = {'description': 'Payment for seeds'}
